@@ -7,15 +7,67 @@
 
 body {
     font-size: 15px;
-    background-color: #333333;
+    background-color: #ccc;
+}
+
+#wrapper {
+    width: 60%;
+    margin: 2% auto;
+    position: relative;
 }
 
 #slider {
-    margin: 2% auto;
-    width: 50%;
+    padding: .2%;
+    border-radius: 5px;
+    width: 100%;
+    background-color: black;
+}
+
+#buttons {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+button {
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: #ff8b43;
+    color: #303030;
+    border-radius: 5px;
+    width: 6%;
+    border: none;
+    position: absolute;
+    opacity: 0.3;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #CC6F35;
+    opacity: 0.8;
+}
+
+#previous {
+    left: 2%;
+    top: 45%;
+}
+
+#next {
+    right: 2%;
+    top: 45%;
 }
 
 #slider img {
-    width: 100%;
+    width: 90%;
+    display: block;
+    margin: 5% auto;
     border-radius: .5em;
+}
+
+@media screen and (max-width: 480px) {
+    #wrapper {
+        width: 80%;
+    }
 }
